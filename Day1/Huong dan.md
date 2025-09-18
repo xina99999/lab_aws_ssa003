@@ -101,6 +101,4 @@
 
 ---
 
-👉 Ngày 1 bạn sẽ mất khoảng **4-5 tiếng** (học + thực hành + ghi chú).
 
-Bạn có muốn mình viết luôn **Ngày 2 (Compute – EC2, Auto Scaling, Load Balancer)** theo cùng format doc như trên không?
