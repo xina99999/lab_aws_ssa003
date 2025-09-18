@@ -1,6 +1,4 @@
-Để xây dựng kế hoạch học 60 ngày hoàn thành chứng chỉ **AWS Certified Solutions Architect – Associate (SAA-C03)** (“SSA003” nếu bạn viết tắt như vậy) thì cần rõ một số điều trước: trình độ hiện tại của bạn về AWS / cloud / mạng / bảo mật / lập trình là bao nhiêu, bạn có bao nhiêu thời gian mỗi ngày để học, và bạn ưu tiên học lý thuyết hay làm lab / thực hành nhiều hơn. Mình giả định bạn đã có kiến thức cơ bản về IT (kế mạng, hệ điều hành, dịch vụ server), và bạn có khoảng 2–3 giờ/ngày để học. Nếu khác, mình có thể điều chỉnh.
 
-Dưới đây là lịch học chi tiết trong 60 ngày (tám tuần khoảng 2½ tháng) để bạn sẵn sàng thi SAA-C03. Mình chia theo từng chủ đề chính + bài lab + bài kiểm tra thử, và đệm lại thời gian ôn tập. Nếu có thay đổi gì (nhiều hay ít thời gian), mình có thể điều chỉnh.
 
 ---
 
@@ -8,14 +6,13 @@ Dưới đây là lịch học chi tiết trong 60 ngày (tám tuần khoảng 2
 
 * Các domain chính (trọng số):
 
-  1. **Design Secure Architectures** – \~30 % ([AWS Static][1])
-  2. **Design Resilient Architectures** – \~26 % ([AWS Static][1])
-  3. **Design High-Performing Architectures** – \~24 % ([AWS Static][1])
-  4. **Design Cost-Optimized Architectures** – \~20 % ([AWS Static][1])
+  1. **Design Secure Architectures** – \~30 % 
+  2. **Design Resilient Architectures** – \~26 % 
+  3. **Design High-Performing Architectures** – \~24 %
+  4. **Design Cost-Optimized Architectures** – \~20 %
 
-* Yêu cầu: ít nhất 1 năm kinh nghiệm thực hành về thiết kế kiến trúc hệ thống AWS, familiar với các dịch vụ như IAM, VPC, EC2, S3, RDS, Lambda etc. ([AWS Static][1])
-
-* Phương thức thi: câu hỏi nhiều lựa chọn và nhiều đáp án (multiple response), tình huống thực tế, không phải lab. ([AWS Static][1])
+* Yêu cầu: ít nhất 1 năm kinh nghiệm thực hành về thiết kế kiến trúc hệ thống AWS, familiar với các dịch vụ như IAM, VPC, EC2, S3, RDS, Lambda etc.
+* Phương thức thi: câu hỏi nhiều lựa chọn và nhiều đáp án (multiple response), tình huống thực tế, không phải lab. 
 
 ---
 
