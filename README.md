@@ -1,4 +1,4 @@
-#Các bài lab và lý thuyết về aws
+
 # Lịch Học 60 Ngày AWS Certified Solutions Architect – Associate (SAA-C03)
 
 ## Tuần 1: Giới Thiệu và AWS Cloud Fundamentals
