@@ -33,7 +33,7 @@
         *   SSH vào instance và dùng AWS CLI để test quyền truy cập S3 mà không cần cấu hình access key.
 
 #### **4. IAM Policies (Chính sách IAM)**
-*   **Mục đích:** Định nghĩa các quyền ( permissions ) dưới dạng JSON, quy định những hành động được phép hoặc bị từ chối trên哪些 tài nguyên nào.
+*   **Mục đích:** Định nghĩa các quyền ( permissions ) dưới dạng JSON, quy định những hành động được phép hoặc bị từ chối trên tài nguyên nào.
 *   **Các thao tác lab chính:**
     *   **Tạo Custom Policy (Visual Editor):**
         *   Chọn Service (ví dụ: S3).
