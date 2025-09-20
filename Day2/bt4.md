@@ -1,4 +1,4 @@
-<img width="1583" height="681" alt="image" src="https://github.com/user-attachments/assets/e957d4b6-282f-4e51-b7bb-f6c786be4a25" />
+
 #### **4. IAM Policies (Chính sách IAM)**
 *   **Mục đích:** Định nghĩa các quyền ( permissions ) dưới dạng JSON, quy định những hành động được phép hoặc bị từ chối trên tài nguyên nào.
 *   **Các thao tác lab chính:**
