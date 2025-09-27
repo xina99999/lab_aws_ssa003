@@ -34,10 +34,14 @@
      ```
 
      * Đoạn mã này sẽ tự động cài đặt Apache, khởi động dịch vụ và tạo một trang web đơn giản hiển thị hostname của instance.
+<img width="1316" height="609" alt="image" src="https://github.com/user-attachments/assets/15b705d1-d621-489e-8be7-37f333f96ac2" />
+<img width="1569" height="106" alt="image" src="https://github.com/user-attachments/assets/b2ce87cc-a04a-4afd-8307-1cd9a2685f71" />
+
 
 4. **Lưu Launch Template**:
 
    * Nhấn **Create launch template** để lưu lại.
+
 
 ---
 
@@ -46,6 +50,8 @@
 1. **Vào Auto Scaling Groups**:
 
    * Trong EC2 Dashboard, tìm và chọn **Auto Scaling Groups** ở mục **Auto Scaling** trong menu bên trái.
+
+
 
 2. **Tạo Auto Scaling Group**:
 
@@ -57,22 +63,27 @@
    * **Launch Template**: Chọn Launch Template mà bạn vừa tạo từ menu dropdown.
    * **VPC**: Chọn **Default VPC**.
    * **Subnet**: Chọn ít nhất hai Subnet thuộc hai Availability Zones (AZ) khác nhau trong VPC (ví dụ: `subnet-1`, `subnet-2`).
+<img width="1562" height="639" alt="image" src="https://github.com/user-attachments/assets/75435762-4f41-45d3-9748-4f54a0ab46c4" />
+<img width="1209" height="369" alt="image" src="https://github.com/user-attachments/assets/57e0d88b-8383-47ef-82b3-ff5c33adacf5" />
 
 4. **Cấu hình Capacity**:
 
    * **Desired capacity**: Đặt thành **1** (số lượng instance bạn muốn khởi tạo ngay khi Auto Scaling Group bắt đầu).
    * **Minimum size**: Đặt là **1** (giới hạn thấp nhất của số lượng instance).
    * **Maximum size**: Đặt là **2** (giới hạn cao nhất của số lượng instance mà Auto Scaling Group có thể tạo ra).
+<img width="1203" height="432" alt="image" src="https://github.com/user-attachments/assets/9646c66d-f97c-4b68-a1a1-733411eb34b0" />
 
 5. **Cấu hình Scaling Policy**:
 
    * **Scaling Policy**: Chọn **Target Tracking**.
    * **Policy type**: Chọn **Target value**.
    * **Target value**: Chọn **50%** cho **CPU Utilization** (điều này có nghĩa là nếu CPU của instance đạt trên 50%, Auto Scaling sẽ tự động scale-out, tạo thêm instance).
+<img width="1224" height="585" alt="image" src="https://github.com/user-attachments/assets/89afab78-7964-44be-8175-741c6880ecd7" />
 
 6. **Tạo Auto Scaling Group**:
 
    * Sau khi hoàn thành, nhấn **Create Auto Scaling group** để tạo nhóm.
+<img width="1562" height="226" alt="image" src="https://github.com/user-attachments/assets/72e71964-f11f-4535-87c1-0ac16f851521" />
 
 ---
 
@@ -106,6 +117,7 @@
 
    * Sau khoảng 1-2 phút, Auto Scaling Group sẽ tự động phát hiện việc sử dụng CPU cao và tạo thêm một EC2 instance mới để giảm tải.
    * Bạn có thể kiểm tra số lượng instance trong **Auto Scaling Group** hoặc vào phần **Instances** trong EC2 Dashboard để xác nhận.
+<img width="1346" height="297" alt="image" src="https://github.com/user-attachments/assets/75931f6d-d36e-4106-be67-b00efe5eff0c" />
 
 ---
 
