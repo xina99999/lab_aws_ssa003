@@ -1,7 +1,7 @@
 ### Lab 2: Thiết lập VPC Peering giữa 2 VPC
 ## ✅ Mục tiêu:
 ## Kết nối 2 VPC và test ping giữa 2 EC2 instance.
-## Chắc chắn rồi! Dưới đây là hướng dẫn chi tiết từng bước để bạn thực hiện **Lab 2: Thiết lập VPC Peering giữa 2 VPC** và kiểm tra kết nối giữa 2 EC2 instance.
+
 
 ---
 
