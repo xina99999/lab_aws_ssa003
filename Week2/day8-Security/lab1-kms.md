@@ -24,16 +24,18 @@
 
    * Ví dụ: chọn `Alice` để thử nghiệm.
 7. Tạo key.
+<img width="1570" height="613" alt="image" src="https://github.com/user-attachments/assets/00ae81c8-cbc4-411d-97a9-bae41659c746" />
 
 ---
 
 ### **Bước 2: Tạo S3 Bucket**
 
 1. Vào **S3 console** → **Create bucket**.
-2. Đặt tên: `secure-bucket-demo-<yourname>`.
+2. Đặt tên: `secure-bucket-demo-<username>`.
 3. Chọn region giống với KMS key.
 4. Trong phần **Default encryption**: chọn **AWS KMS key** → chọn key vừa tạo (`my-s3-kms-key`).
 5. Tạo bucket.
+<img width="1578" height="601" alt="image" src="https://github.com/user-attachments/assets/c52732ea-4563-4727-bf58-5382e696c5e1" />
 
 ---
 
@@ -42,6 +44,7 @@
 1. Vào bucket vừa tạo.
 2. Upload file ví dụ `customer-data.txt`.
 3. Kiểm tra **Properties → Server-side encryption**: thấy `aws:kms` và `my-s3-kms-key`.
+<img width="1565" height="514" alt="image" src="https://github.com/user-attachments/assets/1fb6b743-1149-4602-a36b-902b82493ec1" />
 
 ---
 
@@ -117,5 +120,6 @@
 * UserB **không đọc được**, dù có quyền `s3:GetObject`, nhưng thiếu quyền `kms:Decrypt`.
 
 👉 Đây là minh chứng thực tế cho việc **IAM policy + KMS policy phải phối hợp với nhau**.
+<img width="1599" height="336" alt="image" src="https://github.com/user-attachments/assets/7894d698-0aaa-4118-bdd8-fceadc34f1fb" />
 
 ---
