@@ -105,4 +105,3 @@
 
 ---
 
-👉 Bạn có muốn mình viết thêm **bài tập nhỏ (mini quiz)** cuối bài giống format Ngày 1 không?
