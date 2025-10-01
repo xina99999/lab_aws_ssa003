@@ -27,6 +27,8 @@
 5. Đợi database tạo xong.
 
 
+<img width="1354" height="664" alt="image" src="https://github.com/user-attachments/assets/6946010c-3bfd-42fe-8d2d-c7ced75cdc7d" />
+
 
 ---
 
@@ -46,6 +48,7 @@
    * Rotation interval: **30 ngày**.
 
 ✅ Giờ DB password sẽ tự rotate khi tới hạn.
+<img width="1566" height="602" alt="image" src="https://github.com/user-attachments/assets/1848c292-652d-4dfc-84e7-6da8481e685a" />
 
 ---
 
@@ -93,11 +96,13 @@ def lambda_handler(event, context):
         'ParameterStore': ssm_secret
     }
 ```
+<img width="1361" height="622" alt="image" src="https://github.com/user-attachments/assets/6684d971-674d-43e3-8571-57dd2d97c511" />
 
 3. Gán cho Lambda quyền:
 
    * `SecretsManagerReadWrite`
    * `AmazonSSMReadOnlyAccess`
+<img width="1570" height="758" alt="image" src="https://github.com/user-attachments/assets/bd114538-d94c-44b5-bf64-9e4e4b61f094" />
 
 ---
 
@@ -107,6 +112,7 @@ def lambda_handler(event, context):
 
   * Password từ **Secrets Manager** (JSON gồm username + password).
   * Password từ **Parameter Store** (chỉ value string).
+<img width="1322" height="476" alt="image" src="https://github.com/user-attachments/assets/80e7a8f6-464f-49d0-a1ee-4ec3ea0883d9" />
 
 ---
 
