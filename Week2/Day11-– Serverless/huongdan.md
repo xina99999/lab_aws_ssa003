@@ -140,6 +140,9 @@ Lambda → SQS → Lambda Worker
 3. Deploy → Test function.
 4. Mở **API Gateway Console** → Create API → REST API → Integration với Lambda vừa tạo.
 5. Deploy API → truy cập URL endpoint → test `?name=Nhan`.
+<img width="1493" height="628" alt="image" src="https://github.com/user-attachments/assets/ea711041-7c9a-4331-86c3-94390214ef92" />
+<img width="1352" height="653" alt="image" src="https://github.com/user-attachments/assets/919d018f-e41b-4cae-9768-e667d11e4ccb" />
+<img width="1098" height="619" alt="image" src="https://github.com/user-attachments/assets/73460fc7-8e07-4156-a169-bdac4ed13ec1" />
 
 ---
 
@@ -147,12 +150,15 @@ Lambda → SQS → Lambda Worker
 
 **Bước 1:**
 Tạo **SNS Topic** → đặt tên `event-notification`.
+<img width="1303" height="512" alt="image" src="https://github.com/user-attachments/assets/139ae310-4396-47c2-aa96-d8f6939ea75b" />
 
 **Bước 2:**
 Tạo **SQS Queue** → đặt tên `event-queue`.
+<img width="1582" height="487" alt="image" src="https://github.com/user-attachments/assets/27f6de75-e927-4049-b714-aa27db83b82a" />
 
 **Bước 3:**
 Trong SNS → Add subscription → chọn protocol = SQS → chọn queue vừa tạo.
+<img width="1358" height="532" alt="image" src="https://github.com/user-attachments/assets/30d93a89-032b-450c-ab68-70b11fe400c2" />
 
 **Bước 4:**
 Tạo Lambda → publish event:
@@ -168,6 +174,7 @@ def lambda_handler(event, context):
     sns.publish(TopicArn=TOPIC_ARN, Message=json.dumps(message))
     return {"status": "Message sent"}
 ```
+<img width="1323" height="385" alt="image" src="https://github.com/user-attachments/assets/0113772e-00ec-439e-9037-8c25acbf3367" />
 
 **Bước 5:**
 Tạo Lambda Worker → nhận event từ SQS Queue để xử lý:
